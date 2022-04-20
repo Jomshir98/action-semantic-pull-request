@@ -20,5 +20,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          headerPattern: '^(\w*)(?:\(([\w$.\-*/ ]*)\))?: (.*)$'
-          headerPatternCorrespondence: type, scope, subject
+          types: |
+            FEATURE
+            FIX
+          headerPattern: '^\[(\w*)\]:?\s*(.*)$'
+          headerPatternCorrespondence: type, subject
