@@ -25,3 +25,4 @@ jobs:
             FIX
           headerPattern: '^\[(\w*)\]:?\s*(.*)$'
           headerPatternCorrespondence: type, subject
+          wip: true
